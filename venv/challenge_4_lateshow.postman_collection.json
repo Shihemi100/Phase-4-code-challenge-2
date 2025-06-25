@@ -1,0 +1,19 @@
+[
+    {
+      "name": "The Late Night Show",
+      "host": "John Smith",
+      "episodes": [
+        {
+          "title": "Episode 1",
+          "guest": "Jane Doe",
+          "air_date": "2025-06-01"
+        },
+        {
+          "title": "Episode 2",
+          "guest": "Tom Hanks",
+          "air_date": "2025-06-02"
+        }
+      ]
+    }
+  ]
+  
