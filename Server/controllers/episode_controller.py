@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required
-from server.models.episode import Episode
-from server.models.appearance import Appearance
-from server.models.guest import Guest
-from server.app import db
+from Server.models.episode import Episode
+from Server.models.appearance import Appearance
+from Server.models.guest import Guest
+from Server.app import db
 
 bp = Blueprint('episodes', __name__, url_prefix='/episodes')
 

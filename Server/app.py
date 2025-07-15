@@ -17,7 +17,15 @@ def create_app():
     migrate.init_app(app, db)
     jwt.init_app(app)
 
-    from server.controllers import guest_controller, episode_controller, appearance_controller, auth_controller
+    @app.route("/")
+    def index():
+        return "Welcome to the Flask API!"
+
+    @app.route("/favicon.ico")
+    def favicon():
+        return "", 204
+
+    from Server.controllers import guest_controller, episode_controller, appearance_controller, auth_controller
     app.register_blueprint(guest_controller.bp)
     app.register_blueprint(episode_controller.bp)
     app.register_blueprint(appearance_controller.bp)

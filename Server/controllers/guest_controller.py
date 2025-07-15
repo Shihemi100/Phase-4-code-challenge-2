@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
-from server.models.guest import Guest
-from server.app import db
+from Server.models.guest import Guest
+from Server.app import db
 
 bp = Blueprint('guests', __name__, url_prefix='/guests')
 
